@@ -1,0 +1,85 @@
+.navbar {
+  background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=1%2FYHSAHh&id=31F3065354CA164F122B3804FE7F1015F2971365&thid=OIP.1_YHSAHhNwkUvscYpOlNnAHaE7&mediaurl=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fflat-cms-web-template_23-2148806163.jpg&exph=417&expw=626&q=home+page+for+an+web+simple+frontend+cms&simid=608042309350682717&FORM=IRPRST&ck=2A34BBFBB87026B717F706BB0AD7780C&selectedIndex=1&itb=0&cw=1375&ch=664&ajaxhist=0&ajaxserp=0'); /* Add this line */
+  background-size: cover; /* Optional: To make the image cover the entire navbar */
+  background-position: center; /* Optional: To center the image */
+  background-repeat: no-repeat; /* Optional: To prevent the image from repeating */
+  background-color: #f7f8f8; /* Fallback color, in case the image doesn't load */
+  color: white;
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  margin-right: auto;
+  padding-left: 0px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer; /* Add this if you want the hand cursor on hover */
+}
+
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 90px;
+  display: block;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #04000c;
+}
+
+.navbar .dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-menu li a {
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar .dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
